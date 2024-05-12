@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+    #score {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    #difficulty {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <div id="difficulty">
+    Difficulty:
+    <button id="easy-btn">Easy</button>
+    <button id="medium-btn">Medium</button>
+    <button id="hard-btn">Hard</button>
+    <button type="reset">Reset</button>
+  </div>
+  <canvas id="game-canvas" width="400" height="450"></canvas>
+  <audio id="eat-sound" src="eat.mp3" preload="auto"></audio>
+  <audio id="game-over-sound" src="game-over.mp3" preload="auto"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
